@@ -164,6 +164,12 @@ button { cursor: pointer; }
 .hr-section-head .hr-lead { margin-bottom: 0; }
 
 .hr-prose p { margin: 0 0 1rem; color: var(--ink-soft); }
+.hr-prose a:not(.hr-btn) {
+	color: var(--rose);
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
+}
+.hr-prose a:not(.hr-btn):hover { color: var(--coral); }
 .hr-prose--wide { width: min(720px, calc(100% - 3rem)); margin: 0 auto 4rem; }
 .hr-legal {
 	width: 100%;
