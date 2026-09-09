@@ -1,15 +1,19 @@
 # Stony Point Doodles
 
-Static site for [Stony Point Doodles](https://github.com/amerilistdms/stony-point-doodles) — Netlify hosting.
+Static HTML site for Netlify.
 
 **Stony Point Doodles**  
 *Healthy Puppies. Loving Homes. Lifelong Friends.*
 
+## Structure
+
+- `*.html` — pages
+- `assets/` — CSS, JS, images
+- `netlify.toml` — publish config
+
 ## Netlify
 
-1. New site from Git → GitHub → `amerilistdms/stony-point-doodles`
+1. Import GitHub repo `amerilistdms/stony-point-doodles`
 2. Branch: `main`
-3. Publish directory: `.` (see `netlify.toml`)
+3. Publish directory: `.`
 4. Deploy
-
-Open `index.html` locally, or `preview.html`, to review without Netlify.
