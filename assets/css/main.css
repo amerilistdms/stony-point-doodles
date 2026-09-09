@@ -148,6 +148,16 @@ button { cursor: pointer; }
 .hr-btn--solid:hover { background: var(--accent-deep); box-shadow: 0 10px 22px rgba(222, 128, 116, 0.32); }
 .hr-btn--ghost { background: transparent; border-color: var(--coral); color: var(--coral); }
 .hr-btn--ghost:hover { background: var(--coral); color: #fff; }
+.hr-btn--disabled,
+span.hr-btn {
+	pointer-events: none;
+	cursor: default;
+	opacity: 0.72;
+}
+span.hr-btn.hr-btn--ghost:hover {
+	background: transparent;
+	color: var(--coral);
+}
 .hr-btn--light { background: #fff; color: var(--rose); }
 .hr-btn--light:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(60, 59, 59, 0.12); }
 .hr-btn--outline-light { background: transparent; border-color: #fff; color: #fff; }
@@ -851,6 +861,7 @@ button { cursor: pointer; }
 	background: var(--coral);
 	color: #fff;
 }
+.hr-card__badge--available { background: var(--available); }
 .hr-card__badge--reserved { background: var(--rose); }
 .hr-card__badge--adopted,
 .hr-card__badge--coming,
@@ -1483,7 +1494,7 @@ button { cursor: pointer; }
 .hr-alumni-gallery {
 	width: min(var(--max), calc(100% - 2.5rem));
 	margin: 0 auto;
-	padding: 1rem 0 5rem;
+	padding: 3rem 0 5rem;
 }
 .hr-alumni-gallery .hr-section-head {
 	margin-bottom: 2rem;
