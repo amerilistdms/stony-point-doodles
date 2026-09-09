@@ -746,7 +746,9 @@ button { cursor: pointer; }
 .hr-page-hero .hr-display,
 .hr-page-hero .hr-display--page { color: #fff; max-width: 16ch; }
 .hr-page-hero .hr-lead { color: rgba(255, 255, 255, 0.88); }
-.hr-page-hero + .hr-faq > .hr-section-head { display: none; }
+.hr-faq + .hr-faq {
+	padding-top: 0;
+}
 
 .hr-values__grid {
 	display: grid;
@@ -1227,7 +1229,7 @@ button { cursor: pointer; }
 }
 .hr-faq > .hr-section-head .hr-h2 {
 	margin-inline: auto;
-	max-width: 18ch;
+	max-width: 28ch;
 }
 .hr-faq__list {
 	width: min(780px, calc(100% - 2.5rem));
@@ -1290,7 +1292,8 @@ button { cursor: pointer; }
 	transform: rotate(-135deg);
 }
 .hr-faq__answer { padding: 0 1.6rem 1.35rem 1.4rem; }
-.hr-faq__answer p { margin: 0; }
+.hr-faq__answer p { margin: 0 0 0.85rem; }
+.hr-faq__answer p:last-child { margin-bottom: 0; }
 
 .hr-blog__grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 1.2rem; }
 .hr-blog__card img {
