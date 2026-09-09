@@ -1,0 +1,123 @@
+/* CONTACT + WAITLIST — form 6976914. Design background: #F7F4F0. Inputs white. */
+
+#form div[data-role=control]:not([data-type=form-action-bar]) {
+  background: transparent !important;
+}
+
+#form div[data-role=control] label[data-role=label],
+#form div[data-role=container][data-type=likert-wrapper] label[data-role=label],
+#form div[data-role=container][data-type=repeatable] label[data-role=label] {
+  color: #3C3B3B !important;
+  font-size: 12.5px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+}
+
+#form div[data-role=control] input[data-role=i123-input]:not([type=radio]):not([type=checkbox]):not([type=reset]):not([type=hidden]):not([data-no-theme]),
+#form div[data-role=control] select[data-role=i123-input],
+#form div[data-role=control] textarea[data-role=i123-input],
+#form div[data-role=control] div[data-role=i123-input]:not([data-type=file]),
+#form div[data-role=control] div[data-role=input-container],
+#form div[data-role=control] div[data-role=input-container] > input {
+  background-color: #ffffff !important;
+  color: #3C3B3B !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-family: Lato, sans-serif !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+#form div[data-role=page] {
+  box-shadow: none !important;
+}
+
+#form div[data-role=control][data-type=drop-down] div[data-role=dropdown-skin],
+#form div[data-ui-role=ui-element][data-type=dropdown] > div[data-role=dropdown-skin],
+#form div[data-ui-role=ui-element][data-type=searchable-dropdown] > div[data-role=dropdown-skin],
+#form [data-type=searchable-dropdown] input[type=text] {
+  background-color: #ffffff !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-size: 16px !important;
+  font-family: Lato, sans-serif !important;
+}
+
+#form div[data-role=control] input::placeholder,
+#form div[data-role=control] textarea::placeholder,
+#form div[data-role=control][data-type=drop-down] div[data-role=dropdown-skin],
+#form div[data-ui-role=ui-element][data-type=dropdown] > div[data-role=dropdown-skin],
+#form div[data-ui-role=ui-element][data-type=searchable-dropdown] > div[data-role=dropdown-skin],
+#form [data-type=searchable-dropdown] input[type=text],
+#form [data-type=searchable-dropdown] input[type=text]::placeholder {
+  color: rgba(60, 59, 59, 0.42) !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-family: Lato, sans-serif !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+}
+
+body > div[data-role=dropdown-overlay],
+div[data-role=dropdown-overlay],
+.dropdown-menu__list {
+  background: #ffffff !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+body > div[data-role=dropdown-overlay] > div,
+div[data-role=dropdown-overlay] > div,
+.dropdown-menu__list button,
+.dropdown-menu__list [data-role=option] {
+  background: #ffffff !important;
+  color: #3C3B3B !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-family: Lato, sans-serif !important;
+  padding: 10px 12px !important;
+}
+
+body > div[data-role=dropdown-overlay] > div[selected],
+body > div[data-role=dropdown-overlay] > div:hover,
+div[data-role=dropdown-overlay] > div[selected],
+div[data-role=dropdown-overlay] > div:hover {
+  background: #F7F4F0 !important;
+  color: #3C3B3B !important;
+}
+
+#form [data-type=searchable-dropdown] .dropdown-menu__search-bar,
+.dropdown-menu__search-bar {
+  display: none !important;
+}
+
+#form [data-type=drop-down] option,
+#form [data-type=dropdown] option {
+  background: #ffffff !important;
+  color: #3C3B3B !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+#form button.actionBarBtn--submit {
+  background: #DE8074 !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  border-radius: 500px !important;
+  min-height: 48px !important;
+  height: 48px !important;
+  padding: 0 24px !important;
+  width: auto !important;
+  flex: none !important;
+  align-self: flex-start !important;
+  font-size: 13px !important;
+  letter-spacing: 0.08em !important;
+}

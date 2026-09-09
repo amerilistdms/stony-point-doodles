@@ -1,0 +1,33 @@
+# Netlify / local ignore
+stony-point-doodles-preview.zip
+*.zip
+.DS_Store
+Thumbs.db
+.env
+.env.*
+
+# WordPress core (static site only needs the theme assets/theme)
+wordpress/wp-admin/
+wordpress/wp-includes/
+wordpress/wp-*.php
+wordpress/xmlrpc.php
+wordpress/license.txt
+wordpress/readme.html
+wordpress/index.php
+
+# Default WP themes & unused
+wordpress/wp-content/themes/twentytwenty*/
+wordpress/wp-content/plugins/
+wordpress/wp-content/upgrade/
+wordpress/wp-content/uploads/
+wordpress/wp-content/cache/
+wordpress/wp-content/ai1wm-backups/
+
+# Local / tooling
+.local/
+node_modules/
+.vscode/
+.idea/
+
+Image.jpg
+
