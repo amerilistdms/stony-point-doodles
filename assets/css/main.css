@@ -1507,10 +1507,22 @@ span.hr-btn.hr-btn--ghost:hover {
 	max-width: 46rem;
 }
 .hr-moments .hr-h2 {
-	max-width: 18ch;
+	max-width: none;
+}
+.hr-moments .hr-h2--stacked {
+	line-height: 1.12;
 }
 .hr-moments .hr-lead {
 	max-width: 42rem;
+}
+.hr-moments__cue {
+	margin: 1.35rem 0 0;
+	font-family: var(--display);
+	font-size: 0.82rem;
+	font-weight: 500;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--rose);
 }
 .hr-moments__grid,
 .hr-alumni-gallery__grid:not(:empty) {
