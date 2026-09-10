@@ -1496,22 +1496,36 @@ span.hr-btn.hr-btn--ghost:hover {
 	margin: 0 auto;
 	padding: 3rem 0 5rem;
 }
-.hr-alumni-gallery .hr-section-head {
-	margin-bottom: 2rem;
-	max-width: 40rem;
+.hr-moments {
+	width: min(var(--max), calc(100% - 2.5rem));
+	margin: 0 auto;
+	padding: 4.5rem 0 5rem;
 }
 .hr-alumni-gallery__grid:empty { display: none; }
+.hr-moments .hr-section-head {
+	margin-bottom: 2.25rem;
+	max-width: 46rem;
+}
+.hr-moments .hr-h2 {
+	max-width: 18ch;
+}
+.hr-moments .hr-lead {
+	max-width: 42rem;
+}
+.hr-moments__grid,
 .hr-alumni-gallery__grid:not(:empty) {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 0.85rem;
 }
+.hr-moments__grid figure,
 .hr-alumni-gallery__grid figure {
 	margin: 0;
 	overflow: hidden;
 	border-radius: 8px;
 	background: var(--cream);
 }
+.hr-moments__grid button,
 .hr-alumni-gallery__grid button {
 	display: block;
 	width: 100%;
@@ -1520,6 +1534,7 @@ span.hr-btn.hr-btn--ghost:hover {
 	background: none;
 	cursor: pointer;
 }
+.hr-moments__grid img,
 .hr-alumni-gallery__grid img {
 	display: block;
 	width: 100%;
@@ -1528,12 +1543,15 @@ span.hr-btn.hr-btn--ghost:hover {
 	object-position: center 28%;
 	transition: transform 0.45s var(--ease), opacity 0.25s var(--ease);
 }
+.hr-moments__grid figure:hover img,
 .hr-alumni-gallery__grid figure:hover img {
 	transform: scale(1.03);
 	opacity: 0.92;
 }
 @media (max-width: 700px) {
+	.hr-moments__grid,
 	.hr-alumni-gallery__grid:not(:empty) { grid-template-columns: 1fr 1fr; }
+	.hr-moments__grid img,
 	.hr-alumni-gallery__grid img { height: 170px; }
 }
 
