@@ -2255,11 +2255,13 @@ span.hr-btn.hr-btn--ghost:hover {
 		min-height: min(78vh, 680px);
 		align-items: flex-start;
 		padding: 3.25rem 0 2.75rem;
-		background-size: cover;
+		background-size: contain;
 		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-color: var(--blue);
 	}
 	.hr-hero__photo {
-		object-fit: cover;
+		object-fit: contain;
 		object-position: center bottom;
 	}
 	.hr-hero.hr-hero--splash,
@@ -2283,7 +2285,7 @@ span.hr-btn.hr-btn--ghost:hover {
 		display: block;
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		object-fit: contain;
 		object-position: center bottom;
 	}
 	.hr-hero.hr-hero--splash::after,
@@ -2291,10 +2293,10 @@ span.hr-btn.hr-btn--ghost:hover {
 		display: block;
 		background: linear-gradient(
 			180deg,
-			rgba(3, 82, 122, 0.22) 0%,
-			rgba(3, 82, 122, 0.08) 34%,
-			rgba(3, 82, 122, 0.18) 58%,
-			rgba(3, 82, 122, 0.55) 100%
+			rgba(3, 82, 122, 0.28) 0%,
+			rgba(3, 82, 122, 0.1) 36%,
+			rgba(3, 82, 122, 0.05) 58%,
+			rgba(3, 82, 122, 0.2) 100%
 		);
 	}
 	.hr-hero.hr-hero--splash .hr-hero__inner,
@@ -2417,9 +2419,13 @@ span.hr-btn.hr-btn--ghost:hover {
 	.hr-hero {
 		min-height: min(76vh, 640px);
 		background-position: center bottom;
+		background-size: contain;
 		padding: 3rem 0 1.85rem;
 	}
-	.hr-hero__photo { object-position: center bottom; }
+	.hr-hero__photo {
+		object-fit: contain;
+		object-position: center bottom;
+	}
 	.hr-hero.hr-hero--splash,
 	.hr-hero.hr-hero--banner {
 		min-height: min(76vh, 640px);
@@ -2427,6 +2433,7 @@ span.hr-btn.hr-btn--ghost:hover {
 	}
 	.hr-hero.hr-hero--splash .hr-hero__photo,
 	.hr-hero.hr-hero--banner .hr-hero__photo {
+		object-fit: contain;
 		object-position: center bottom;
 	}
 	.hr-litter-now { padding: 3.25rem 1.15rem 3.75rem; }
