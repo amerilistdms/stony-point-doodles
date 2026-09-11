@@ -573,7 +573,7 @@ span.hr-btn.hr-btn--ghost:hover {
 .hr-menu-btn.is-open span:first-child { transform: translateY(4.75px) rotate(45deg); }
 .hr-menu-btn.is-open span:last-child { transform: translateY(-4.75px) rotate(-45deg); }
 
-.hr-main { overflow: clip; }
+.hr-main { overflow-x: clip; }
 
 /* Hero: full-bleed photo banner, type on top */
 .hr-hero,
@@ -1633,8 +1633,23 @@ span.hr-btn.hr-btn--ghost:hover {
 .hr-lightbox__prev:hover,
 .hr-lightbox__next:hover { background: var(--coral); }
 @media (max-width: 700px) {
+	.hr-lightbox {
+		padding: 4.5rem 0.65rem 1.25rem;
+		touch-action: pan-y;
+	}
 	.hr-lightbox__prev,
-	.hr-lightbox__next { display: none; }
+	.hr-lightbox__next {
+		display: grid;
+		width: 2.6rem;
+		height: 2.6rem;
+		background: rgba(255, 255, 255, 0.2);
+	}
+	.hr-lightbox__prev { left: 0.55rem; }
+	.hr-lightbox__next { right: 0.55rem; }
+	.hr-lightbox__img {
+		max-width: calc(100% - 0.5rem);
+		max-height: min(78vh, 100%);
+	}
 }
 
 .hr-footer {
@@ -2241,6 +2256,19 @@ span.hr-btn.hr-btn--ghost:hover {
 		background-position: 58% 22%;
 	}
 	.hr-hero__photo { object-position: 58% 22%; }
+	.hr-hero.hr-hero--splash,
+	.hr-hero.hr-hero--banner {
+		min-height: 0;
+		aspect-ratio: 4 / 3;
+		padding: 2.75rem 0 1.75rem;
+		background-color: var(--blue);
+		background-image: none;
+	}
+	.hr-hero.hr-hero--splash .hr-hero__photo,
+	.hr-hero.hr-hero--banner .hr-hero__photo {
+		object-fit: contain;
+		object-position: center center;
+	}
 	.hr-hero::after {
 		background: linear-gradient(
 			180deg,
@@ -2335,6 +2363,17 @@ span.hr-btn.hr-btn--ghost:hover {
 		background-position: 52% 18%;
 	}
 	.hr-hero__photo { object-position: 52% 18%; }
+	.hr-hero.hr-hero--splash,
+	.hr-hero.hr-hero--banner {
+		min-height: 0;
+		aspect-ratio: 5 / 4;
+		padding: 2.5rem 0 1.5rem;
+	}
+	.hr-hero.hr-hero--splash .hr-hero__photo,
+	.hr-hero.hr-hero--banner .hr-hero__photo {
+		object-fit: contain;
+		object-position: center center;
+	}
 	.hr-litter-now { padding: 3.25rem 1.15rem 3.75rem; }
 	.hr-puppies .hr-cards { gap: 2rem 1.25rem; }
 }

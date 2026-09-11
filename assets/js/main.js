@@ -217,6 +217,21 @@
     shell.addEventListener("click", (event) => {
       if (event.target === shell) close();
     });
+    let touchX = 0;
+    let touchY = 0;
+    shell.addEventListener("touchstart", (event) => {
+      if (!event.changedTouches.length) return;
+      touchX = event.changedTouches[0].clientX;
+      touchY = event.changedTouches[0].clientY;
+    }, { passive: true });
+    shell.addEventListener("touchend", (event) => {
+      if (!shell.classList.contains("is-open") || !event.changedTouches.length) return;
+      const dx = event.changedTouches[0].clientX - touchX;
+      const dy = event.changedTouches[0].clientY - touchY;
+      if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy)) return;
+      if (dx < 0) show(index + 1);
+      else show(index - 1);
+    }, { passive: true });
     document.addEventListener("keydown", (event) => {
       if (!shell.classList.contains("is-open")) return;
       if (event.key === "Escape") close();
