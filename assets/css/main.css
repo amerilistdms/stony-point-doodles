@@ -2251,32 +2251,28 @@ span.hr-btn.hr-btn--ghost:hover {
 		padding: 3.25rem 1.25rem 2.75rem;
 	}
 	.hr-puppies { padding: 3.5rem 0 3.75rem; }
-	.hr-hero {
-		min-height: min(78vh, 680px);
-		align-items: flex-start;
-		padding: 3.25rem 0 2.75rem;
-		background-size: contain;
-		background-position: center bottom;
-		background-repeat: no-repeat;
-		background-color: var(--blue);
-	}
-	.hr-hero__photo {
-		object-fit: contain;
-		object-position: center bottom;
-	}
+	/* Home hero mobile: same composition as desktop — text over the photo */
 	.hr-hero.hr-hero--splash,
 	.hr-hero.hr-hero--banner {
-		display: flex;
-		flex-direction: column;
+		display: block;
+		position: relative;
 		align-items: stretch;
 		justify-content: flex-start;
-		min-height: min(78vh, 680px);
+		min-height: max(22.5rem, 92vw);
 		height: auto;
 		aspect-ratio: auto;
-		padding: 3.25rem 0 2.25rem;
+		padding: 0;
 		overflow: hidden;
-		background-color: var(--blue);
+		background-color: #0a7eb0;
 		background-image: none;
+	}
+	.hr-hero.hr-hero--splash picture,
+	.hr-hero.hr-hero--banner picture {
+		display: block;
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
 	}
 	.hr-hero.hr-hero--splash .hr-hero__photo,
 	.hr-hero.hr-hero--banner .hr-hero__photo {
@@ -2285,7 +2281,7 @@ span.hr-btn.hr-btn--ghost:hover {
 		display: block;
 		width: 100%;
 		height: 100%;
-		object-fit: contain;
+		object-fit: cover;
 		object-position: center bottom;
 	}
 	.hr-hero.hr-hero--splash::after,
@@ -2293,47 +2289,49 @@ span.hr-btn.hr-btn--ghost:hover {
 		display: block;
 		background: linear-gradient(
 			180deg,
-			rgba(3, 82, 122, 0.28) 0%,
-			rgba(3, 82, 122, 0.1) 36%,
-			rgba(3, 82, 122, 0.05) 58%,
-			rgba(3, 82, 122, 0.2) 100%
+			rgba(8, 102, 149, 0.42) 0%,
+			rgba(8, 102, 149, 0.12) 38%,
+			rgba(8, 102, 149, 0) 62%
 		);
 	}
 	.hr-hero.hr-hero--splash .hr-hero__inner,
 	.hr-hero.hr-hero--banner .hr-hero__inner {
-		width: min(var(--max), calc(100% - 2.5rem));
-		margin: 0 auto;
-		padding: 0;
-		position: relative;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		width: 100%;
+		max-width: none;
+		margin: 0;
+		padding: 1.35rem 1.25rem 0;
+		box-sizing: border-box;
 		z-index: 2;
 	}
 	.hr-hero.hr-hero--splash .hr-hero__copy,
 	.hr-hero.hr-hero--banner .hr-hero__copy {
-		max-width: 22rem;
+		max-width: 20rem;
 	}
 	.hr-hero.hr-hero--splash .hr-display,
 	.hr-hero.hr-hero--banner .hr-display {
-		font-size: clamp(2.5rem, 11vw, 3.5rem);
+		font-size: clamp(2.15rem, 9.5vw, 3rem);
 		max-width: 11ch;
 		line-height: 0.98;
 	}
 	.hr-hero.hr-hero--splash .hr-script,
 	.hr-hero.hr-hero--banner .hr-script {
-		font-size: clamp(2rem, 8.5vw, 2.55rem);
-		margin: 0.15rem 0 0.55rem;
+		font-size: clamp(1.7rem, 7.5vw, 2.2rem);
+		margin: 0.1rem 0 0.4rem;
 	}
 	.hr-hero.hr-hero--splash .hr-lead,
 	.hr-hero.hr-hero--banner .hr-lead {
 		max-width: 28ch;
-		font-size: 0.98rem;
+		font-size: 0.92rem;
+		margin-bottom: 0.85rem;
 	}
-	.hr-hero::after {
-		background: linear-gradient(
-			180deg,
-			rgba(40, 36, 32, 0.05) 0%,
-			rgba(40, 36, 32, 0.22) 38%,
-			rgba(40, 36, 32, 0.62) 100%
-		);
+	.hr-hero.hr-hero--splash .hr-actions,
+	.hr-hero.hr-hero--banner .hr-actions {
+		flex-wrap: wrap;
+		gap: 0.5rem;
 	}
 	.hr-hero__copy {
 		max-width: 28rem;
@@ -2412,29 +2410,27 @@ span.hr-btn.hr-btn--ghost:hover {
 	.hr-pillars { padding: 3.75rem 0; }
 	.hr-love,
 	.hr-love--split { padding: 3.75rem 1.25rem 4.25rem; }
-	.hr-hero .hr-actions { flex-direction: column; align-items: stretch; }
-	.hr-hero .hr-btn { width: 100%; }
+	.hr-hero .hr-actions { flex-direction: row; align-items: center; }
+	.hr-hero .hr-btn { width: auto; }
 	.hr-process li { padding-right: 0; }
 	.hr-process li span { font-size: 2rem; }
-	.hr-hero {
-		min-height: min(76vh, 640px);
-		background-position: center bottom;
-		background-size: contain;
-		padding: 3rem 0 1.85rem;
-	}
-	.hr-hero__photo {
-		object-fit: contain;
-		object-position: center bottom;
-	}
 	.hr-hero.hr-hero--splash,
 	.hr-hero.hr-hero--banner {
-		min-height: min(76vh, 640px);
-		padding: 3rem 0 1.85rem;
+		min-height: max(21rem, 96vw);
 	}
 	.hr-hero.hr-hero--splash .hr-hero__photo,
 	.hr-hero.hr-hero--banner .hr-hero__photo {
-		object-fit: contain;
+		object-fit: cover;
 		object-position: center bottom;
+	}
+	.hr-hero.hr-hero--splash .hr-actions,
+	.hr-hero.hr-hero--banner .hr-actions {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.hr-hero.hr-hero--splash .hr-btn,
+	.hr-hero.hr-hero--banner .hr-btn {
+		width: 100%;
 	}
 	.hr-litter-now { padding: 3.25rem 1.15rem 3.75rem; }
 	.hr-puppies .hr-cards { gap: 2rem 1.25rem; }
