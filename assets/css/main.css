@@ -604,6 +604,9 @@ span.hr-btn.hr-btn--ghost:hover {
 	z-index: 0;
 	pointer-events: none;
 }
+.hr-hero picture {
+	display: contents;
+}
 .hr-hero:has(.hr-hero__photo) {
 	background-image: none;
 }
@@ -2249,26 +2252,26 @@ span.hr-btn.hr-btn--ghost:hover {
 	}
 	.hr-puppies { padding: 3.5rem 0 3.75rem; }
 	.hr-hero {
-		min-height: min(72vh, 620px);
-		align-items: flex-end;
-		padding: 3.5rem 0 2.75rem;
+		min-height: min(78vh, 680px);
+		align-items: flex-start;
+		padding: 3.25rem 0 2.75rem;
 		background-size: cover;
-		background-position: 68% 42%;
+		background-position: center bottom;
 	}
 	.hr-hero__photo {
 		object-fit: cover;
-		object-position: 68% 42%;
+		object-position: center bottom;
 	}
 	.hr-hero.hr-hero--splash,
 	.hr-hero.hr-hero--banner {
 		display: flex;
 		flex-direction: column;
 		align-items: stretch;
-		justify-content: flex-end;
-		min-height: min(72vh, 620px);
+		justify-content: flex-start;
+		min-height: min(78vh, 680px);
 		height: auto;
 		aspect-ratio: auto;
-		padding: 4.5rem 0 2.25rem;
+		padding: 3.25rem 0 2.25rem;
 		overflow: hidden;
 		background-color: var(--blue);
 		background-image: none;
@@ -2281,17 +2284,17 @@ span.hr-btn.hr-btn--ghost:hover {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: 70% 40%;
+		object-position: center bottom;
 	}
 	.hr-hero.hr-hero--splash::after,
 	.hr-hero.hr-hero--banner::after {
 		display: block;
 		background: linear-gradient(
 			180deg,
-			rgba(3, 82, 122, 0.08) 0%,
-			rgba(3, 82, 122, 0.18) 28%,
-			rgba(3, 82, 122, 0.72) 68%,
-			rgba(3, 82, 122, 0.94) 100%
+			rgba(3, 82, 122, 0.22) 0%,
+			rgba(3, 82, 122, 0.08) 34%,
+			rgba(3, 82, 122, 0.18) 58%,
+			rgba(3, 82, 122, 0.55) 100%
 		);
 	}
 	.hr-hero.hr-hero--splash .hr-hero__inner,
@@ -2412,19 +2415,19 @@ span.hr-btn.hr-btn--ghost:hover {
 	.hr-process li { padding-right: 0; }
 	.hr-process li span { font-size: 2rem; }
 	.hr-hero {
-		min-height: min(68vh, 560px);
-		background-position: 70% 40%;
-		padding: 4.25rem 0 1.85rem;
+		min-height: min(76vh, 640px);
+		background-position: center bottom;
+		padding: 3rem 0 1.85rem;
 	}
-	.hr-hero__photo { object-position: 70% 40%; }
+	.hr-hero__photo { object-position: center bottom; }
 	.hr-hero.hr-hero--splash,
 	.hr-hero.hr-hero--banner {
-		min-height: min(68vh, 560px);
-		padding: 4.25rem 0 1.85rem;
+		min-height: min(76vh, 640px);
+		padding: 3rem 0 1.85rem;
 	}
 	.hr-hero.hr-hero--splash .hr-hero__photo,
 	.hr-hero.hr-hero--banner .hr-hero__photo {
-		object-position: 70% 40%;
+		object-position: center bottom;
 	}
 	.hr-litter-now { padding: 3.25rem 1.15rem 3.75rem; }
 	.hr-puppies .hr-cards { gap: 2rem 1.25rem; }

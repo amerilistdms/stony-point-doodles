@@ -68,7 +68,10 @@
 
   <main class="hr-main" id="content">
     <section class="hr-hero hr-hero--splash hr-hero--banner" id="top" style="--hero-image: url('assets/images/photos/hero-doodles.png')">
-      <img class="hr-hero__photo" src="assets/images/photos/hero-doodles.png" alt="Three Stony Point doodle puppies">
+      <picture>
+        <source media="(max-width: 980px)" srcset="assets/images/photos/heroexpanded.png">
+        <img class="hr-hero__photo" src="assets/images/photos/hero-doodles.png" alt="Three Stony Point doodle puppies">
+      </picture>
       <div class="hr-hero__inner">
         <div class="hr-hero__copy">
           <h1 class="hr-display">Healthy puppies.<br>Loving homes.</h1>
