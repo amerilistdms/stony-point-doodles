@@ -2258,16 +2258,56 @@ span.hr-btn.hr-btn--ghost:hover {
 	.hr-hero__photo { object-position: 58% 22%; }
 	.hr-hero.hr-hero--splash,
 	.hr-hero.hr-hero--banner {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: flex-start;
 		min-height: 0;
-		aspect-ratio: 4 / 3;
-		padding: 2.75rem 0 1.75rem;
+		height: auto;
+		aspect-ratio: auto;
+		padding: 0;
+		overflow: hidden;
 		background-color: var(--blue);
 		background-image: none;
 	}
 	.hr-hero.hr-hero--splash .hr-hero__photo,
 	.hr-hero.hr-hero--banner .hr-hero__photo {
+		position: relative;
+		inset: auto;
+		display: block;
+		width: 100%;
+		height: auto;
+		max-height: none;
 		object-fit: contain;
 		object-position: center center;
+		background: var(--blue);
+	}
+	.hr-hero.hr-hero--splash::after,
+	.hr-hero.hr-hero--banner::after {
+		display: none;
+	}
+	.hr-hero.hr-hero--splash .hr-hero__inner,
+	.hr-hero.hr-hero--banner .hr-hero__inner {
+		width: 100%;
+		max-width: none;
+		padding: 1.5rem 1.25rem 2rem;
+	}
+	.hr-hero.hr-hero--splash .hr-hero__copy,
+	.hr-hero.hr-hero--banner .hr-hero__copy {
+		max-width: none;
+	}
+	.hr-hero.hr-hero--splash .hr-display,
+	.hr-hero.hr-hero--banner .hr-display {
+		font-size: clamp(2.35rem, 11vw, 3.4rem);
+		max-width: 11ch;
+	}
+	.hr-hero.hr-hero--splash .hr-script,
+	.hr-hero.hr-hero--banner .hr-script {
+		font-size: clamp(2rem, 9vw, 2.6rem);
+	}
+	.hr-hero.hr-hero--splash .hr-lead,
+	.hr-hero.hr-hero--banner .hr-lead {
+		max-width: 28ch;
 	}
 	.hr-hero::after {
 		background: linear-gradient(
@@ -2366,13 +2406,12 @@ span.hr-btn.hr-btn--ghost:hover {
 	.hr-hero.hr-hero--splash,
 	.hr-hero.hr-hero--banner {
 		min-height: 0;
-		aspect-ratio: 5 / 4;
-		padding: 2.5rem 0 1.5rem;
+		aspect-ratio: auto;
+		padding: 0;
 	}
-	.hr-hero.hr-hero--splash .hr-hero__photo,
-	.hr-hero.hr-hero--banner .hr-hero__photo {
-		object-fit: contain;
-		object-position: center center;
+	.hr-hero.hr-hero--splash .hr-hero__inner,
+	.hr-hero.hr-hero--banner .hr-hero__inner {
+		padding: 1.35rem 1.15rem 1.85rem;
 	}
 	.hr-litter-now { padding: 3.25rem 1.15rem 3.75rem; }
 	.hr-puppies .hr-cards { gap: 2rem 1.25rem; }
