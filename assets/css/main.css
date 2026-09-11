@@ -2258,7 +2258,8 @@ span.hr-btn.hr-btn--ghost:hover {
 		position: relative;
 		align-items: stretch;
 		justify-content: flex-start;
-		min-height: min(90vh, 740px);
+		/* Tall enough that both CTAs stay fully visible (was clipping Apply) */
+		min-height: max(36rem, 125vw);
 		height: auto;
 		aspect-ratio: auto;
 		padding: 0;
@@ -2300,17 +2301,23 @@ span.hr-btn.hr-btn--ghost:hover {
 		left: 0;
 		right: 0;
 		top: 0;
+		bottom: 0;
 		width: 100%;
 		max-width: none;
 		margin: 0;
-		padding: 1.1rem 1.2rem 0;
+		padding: 1.1rem 1.2rem 1.25rem;
 		box-sizing: border-box;
 		z-index: 2;
-		max-height: 46%;
+		display: flex;
+		flex-direction: column;
 	}
 	.hr-hero.hr-hero--splash .hr-hero__copy,
 	.hr-hero.hr-hero--banner .hr-hero__copy {
 		max-width: 20rem;
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
+		min-height: 0;
 	}
 	.hr-hero.hr-hero--splash .hr-display,
 	.hr-hero.hr-hero--banner .hr-display {
@@ -2335,19 +2342,21 @@ span.hr-btn.hr-btn--ghost:hover {
 	.hr-hero.hr-hero--splash .hr-actions,
 	.hr-hero.hr-hero--banner .hr-actions {
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: center;
-		gap: 0.45rem;
-		margin: 0;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: stretch;
+		gap: 0.55rem;
+		margin-top: auto;
+		padding-bottom: 0.15rem;
 	}
 	.hr-hero.hr-hero--splash .hr-btn,
 	.hr-hero.hr-hero--banner .hr-btn {
-		width: auto;
-		flex: 1 1 auto;
-		min-height: 2.35rem;
-		padding: 0.4rem 0.85rem;
-		font-size: 0.68rem;
+		width: 100%;
+		flex: 0 0 auto;
+		min-height: 2.55rem;
+		padding: 0.55rem 1rem;
+		font-size: 0.72rem;
+		box-sizing: border-box;
 	}
 	.hr-hero__copy {
 		max-width: 28rem;
@@ -2426,18 +2435,17 @@ span.hr-btn.hr-btn--ghost:hover {
 	.hr-pillars { padding: 3.75rem 0; }
 	.hr-love,
 	.hr-love--split { padding: 3.75rem 1.25rem 4.25rem; }
-	.hr-hero .hr-actions { flex-direction: row; align-items: center; }
-	.hr-hero .hr-btn { width: auto; }
+	.hr-hero .hr-actions { flex-direction: column; align-items: stretch; }
+	.hr-hero .hr-btn { width: 100%; }
 	.hr-process li { padding-right: 0; }
 	.hr-process li span { font-size: 2rem; }
 	.hr-hero.hr-hero--splash,
 	.hr-hero.hr-hero--banner {
-		min-height: min(92vh, 700px);
+		min-height: max(34rem, 138vw);
 	}
 	.hr-hero.hr-hero--splash .hr-hero__inner,
 	.hr-hero.hr-hero--banner .hr-hero__inner {
-		max-height: 44%;
-		padding-top: 0.95rem;
+		padding: 0.95rem 1.15rem 1.35rem;
 	}
 	.hr-hero.hr-hero--splash .hr-display,
 	.hr-hero.hr-hero--banner .hr-display {
@@ -2454,17 +2462,18 @@ span.hr-btn.hr-btn--ghost:hover {
 	}
 	.hr-hero.hr-hero--splash .hr-actions,
 	.hr-hero.hr-hero--banner .hr-actions {
-		flex-direction: row;
-		align-items: center;
-		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0.5rem;
+		margin-top: auto;
 	}
 	.hr-hero.hr-hero--splash .hr-btn,
 	.hr-hero.hr-hero--banner .hr-btn {
-		width: auto;
-		flex: 1 1 calc(50% - 0.25rem);
-		min-height: 2.25rem;
-		padding: 0.35rem 0.7rem;
-		font-size: 0.64rem;
+		width: 100%;
+		flex: 0 0 auto;
+		min-height: 2.5rem;
+		padding: 0.5rem 0.9rem;
+		font-size: 0.7rem;
 	}
 	.hr-litter-now { padding: 3.25rem 1.15rem 3.75rem; }
 	.hr-puppies .hr-cards { gap: 2rem 1.25rem; }
