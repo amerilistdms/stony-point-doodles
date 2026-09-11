@@ -2253,11 +2253,11 @@ span.hr-btn.hr-btn--ghost:hover {
 		align-items: flex-end;
 		padding: 3.5rem 0 2.75rem;
 		background-size: cover;
-		background-position: 80% 42%;
+		background-position: 68% 42%;
 	}
 	.hr-hero__photo {
 		object-fit: cover;
-		object-position: 80% 42%;
+		object-position: 68% 42%;
 	}
 	.hr-hero.hr-hero--splash,
 	.hr-hero.hr-hero--banner {
@@ -2281,7 +2281,7 @@ span.hr-btn.hr-btn--ghost:hover {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		object-position: 82% 40%;
+		object-position: 70% 40%;
 	}
 	.hr-hero.hr-hero--splash::after,
 	.hr-hero.hr-hero--banner::after {
@@ -2413,10 +2413,10 @@ span.hr-btn.hr-btn--ghost:hover {
 	.hr-process li span { font-size: 2rem; }
 	.hr-hero {
 		min-height: min(68vh, 560px);
-		background-position: 84% 40%;
+		background-position: 70% 40%;
 		padding: 4.25rem 0 1.85rem;
 	}
-	.hr-hero__photo { object-position: 84% 40%; }
+	.hr-hero__photo { object-position: 70% 40%; }
 	.hr-hero.hr-hero--splash,
 	.hr-hero.hr-hero--banner {
 		min-height: min(68vh, 560px);
@@ -2424,7 +2424,7 @@ span.hr-btn.hr-btn--ghost:hover {
 	}
 	.hr-hero.hr-hero--splash .hr-hero__photo,
 	.hr-hero.hr-hero--banner .hr-hero__photo {
-		object-position: 84% 40%;
+		object-position: 70% 40%;
 	}
 	.hr-litter-now { padding: 3.25rem 1.15rem 3.75rem; }
 	.hr-puppies .hr-cards { gap: 2rem 1.25rem; }
