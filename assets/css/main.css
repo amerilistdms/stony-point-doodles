@@ -227,68 +227,26 @@ span.hr-btn.hr-btn--ghost:hover {
 	width: 100%;
 	padding: 2.5rem 0 2.35rem;
 	background: var(--cream);
+	text-align: center;
 }
 .hr-guide-intro__inner {
-	width: min(var(--max), calc(100% - 2.5rem));
+	width: min(44rem, calc(100% - 2.5rem));
 	margin: 0 auto;
 }
 .hr-guide-intro .hr-section-head {
-	margin: 0 0 1.25rem;
+	margin: 0 auto 1.15rem;
 	max-width: none;
 }
 .hr-guide-intro .hr-section-head .hr-h2 {
-	max-width: 22ch;
+	max-width: none;
 }
 .hr-guide-intro .hr-section-head .hr-lead {
-	max-width: 58ch;
-	margin-top: 0.7rem;
+	max-width: none;
+	margin: 0.7rem auto 0;
 }
 .hr-guide-intro__prose {
-	max-width: 62ch;
-	margin: 0 0 1.5rem;
-}
-@media (min-width: 900px) {
-	.hr-guide-intro__inner {
-		display: grid;
-		grid-template-columns: minmax(18rem, 1fr) minmax(20rem, 1.05fr);
-		column-gap: 3.25rem;
-		row-gap: 1.75rem;
-		align-items: end;
-	}
-	.hr-guide-intro .hr-section-head {
-		grid-column: 1;
-		margin: 0;
-	}
-	.hr-guide-intro .hr-section-head .hr-h2 {
-		max-width: none;
-	}
-	.hr-guide-intro__prose {
-		grid-column: 2;
-		grid-row: 1;
-		max-width: none;
-		margin: 0;
-		padding-bottom: 0.15rem;
-	}
-	.hr-guide-toc {
-		grid-column: 1 / -1;
-	}
-	.hr-guide-intro:not(:has(.hr-guide-intro__prose)) .hr-section-head {
-		grid-column: 1 / -1;
-		display: grid;
-		grid-template-columns: minmax(16rem, 0.9fr) minmax(20rem, 1.1fr);
-		column-gap: 3.25rem;
-		align-items: end;
-	}
-	.hr-guide-intro:not(:has(.hr-guide-intro__prose)) .hr-kicker,
-	.hr-guide-intro:not(:has(.hr-guide-intro__prose)) .hr-h2 {
-		grid-column: 1;
-	}
-	.hr-guide-intro:not(:has(.hr-guide-intro__prose)) .hr-lead {
-		grid-column: 2;
-		grid-row: 1 / span 2;
-		max-width: none;
-		margin: 0;
-	}
+	max-width: none;
+	margin: 0 auto 1.5rem;
 }
 .hr-guide-toc {
 	margin: 0;
@@ -806,6 +764,25 @@ span.hr-btn.hr-btn--ghost:hover {
 	padding: 4.75rem max(1.25rem, calc((100% - var(--max)) / 2)) 4.25rem;
 	background: var(--hero-wash);
 	color: #fff;
+}
+.is-resource .hr-page-hero {
+	text-align: center;
+	padding-top: 3.5rem;
+	padding-bottom: 3.15rem;
+}
+.is-resource .hr-page-hero .hr-display,
+.is-resource .hr-page-hero .hr-display--page {
+	max-width: 22ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+.is-resource .hr-page-hero .hr-lead {
+	max-width: 40rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.is-resource .hr-blog-meta {
+	justify-content: center;
 }
 .hr-page-hero--mint { background: var(--hero-wash); }
 .hr-page-hero .hr-kicker { color: var(--peach); }
