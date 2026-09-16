@@ -1690,6 +1690,11 @@ span.hr-btn.hr-btn--ghost:hover {
 }
 .hr-footer__bar a:hover { color: var(--peach); }
 .hr-footer__brand > p { max-width: 36ch; }
+.hr-footer__contact {
+	margin-top: 1.25rem;
+}
+.hr-footer__contact .hr-kicker { margin-bottom: 0.45rem; }
+.hr-footer__contact p { margin: 0.2rem 0 0; }
 .hr-footer__social {
 	display: flex;
 	gap: 0.65rem;
