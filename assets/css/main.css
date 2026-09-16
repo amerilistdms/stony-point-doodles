@@ -227,15 +227,15 @@ span.hr-btn.hr-btn--ghost:hover {
 	width: 100%;
 	padding: 2.5rem 0 2.35rem;
 	background: var(--cream);
-	text-align: center;
 }
 .hr-guide-intro__inner {
-	width: min(44rem, calc(100% - 2.5rem));
+	width: min(var(--max), calc(100% - 2.5rem));
 	margin: 0 auto;
 }
 .hr-guide-intro .hr-section-head {
 	margin: 0 auto 1.15rem;
-	max-width: none;
+	max-width: 40rem;
+	text-align: center;
 }
 .hr-guide-intro .hr-section-head .hr-h2 {
 	max-width: none;
@@ -245,8 +245,9 @@ span.hr-btn.hr-btn--ghost:hover {
 	margin: 0.7rem auto 0;
 }
 .hr-guide-intro__prose {
-	max-width: none;
-	margin: 0 auto 1.5rem;
+	max-width: 40rem;
+	margin: 0 auto 1.75rem;
+	text-align: center;
 }
 .hr-guide-toc {
 	margin: 0;
