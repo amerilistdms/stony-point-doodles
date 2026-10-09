@@ -1,4 +1,76 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/zeus",
+      "destination": "/cooper",
+      "permanent": true
+    },
+    {
+      "source": "/zeus.html",
+      "destination": "/cooper",
+      "permanent": true
+    },
+    {
+      "source": "/apollo",
+      "destination": "/teddy",
+      "permanent": true
+    },
+    {
+      "source": "/apollo.html",
+      "destination": "/teddy",
+      "permanent": true
+    },
+    {
+      "source": "/frodo",
+      "destination": "/leo",
+      "permanent": true
+    },
+    {
+      "source": "/frodo.html",
+      "destination": "/leo",
+      "permanent": true
+    },
+    {
+      "source": "/nala",
+      "destination": "/ruby",
+      "permanent": true
+    },
+    {
+      "source": "/nala.html",
+      "destination": "/ruby",
+      "permanent": true
+    },
+    {
+      "source": "/athena",
+      "destination": "/snickers",
+      "permanent": true
+    },
+    {
+      "source": "/athena.html",
+      "destination": "/snickers",
+      "permanent": true
+    },
+    {
+      "source": "/kiara",
+      "destination": "/weezie",
+      "permanent": true
+    },
+    {
+      "source": "/kiara.html",
+      "destination": "/weezie",
+      "permanent": true
+    },
+    {
+      "source": "/preview",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/preview.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
 }

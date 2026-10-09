@@ -7,4 +7,4 @@ Allow: /
 User-agent: bingbot
 Allow: /
 
-Sitemap: https://stonypointdoodles.com/sitemap.xml
+Sitemap: https://www.stonypointdoodles.com/sitemap.xml
