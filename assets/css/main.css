@@ -918,6 +918,9 @@ span.hr-btn.hr-btn--ghost:hover {
 	width: min(var(--max), calc(100% - 2.5rem));
 	margin-inline: auto;
 }
+.hr-puppies .hr-section-head .hr-lead {
+	max-width: none;
+}
 .hr-puppies .hr-cards { gap: 2.25rem 1.75rem; }
 .hr-puppies .hr-card {
 	background: none;
