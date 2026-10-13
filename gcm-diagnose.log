@@ -1,0 +1,216 @@
+﻿Diagnose log at 2026-09-10T18:56:06Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.6.1+786ab03440ddc82e807a97c0e540f5247e44cec6
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 26200)
+Reading environment variables... OK
+ Variables:
+HOMEPATH=\Users\kevin
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=KILLER
+GIT_TRACE2_PARENT_SID=96d1d392-8a2b-4d63-b607-4b4ae775e507
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+ProgramW6432=C:\Program Files
+OneDrive=C:\Users\kevin\OneDrive
+ChocolateyLastPathUpdate=134121310416469462
+windir=C:\WINDOWS
+SESSIONNAME=Console
+PSExecutionPolicyPreference=Bypass
+__CURSOR_SANDBOX_ENV_RESTORE=builtin unset CURSOR_CONVERSATION_ID CURSOR_AGENT_STORE_FILES_DIR CURSOR_AGENT_STORE_SHARED_PATHS 2>/dev/null || true; builtin export CURSOR_CONVERSATION_ID='0dee443e-cea5-4116-b391-301192402367'
+CURSOR_AGENT=1
+VSCODE_HANDLES_UNCAUGHT_ERRORS=true
+LC_CTYPE=C.UTF-8
+ZES_ENABLE_SYSMAN=1
+INTEL_DEV_REDIST=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+VSCODE_IPC_HOOK=\\.\pipe\0ce61c3b-3.17.19-main-sock
+SystemDrive=C:
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+CURSOR_RIPGREP_PATH=c:\Users\kevin\AppData\Local\Programs\cursor\resources\app\node_modules\@vscode\ripgrep\bin\rg.exe
+LOCALAPPDATA=C:\Users\kevin\AppData\Local
+MSYSTEM=MINGW64
+TERM=dumb
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
+VSCODE_CRASH_REPORTER_PROCESS_TYPE=extensionHost
+ProgramData=C:\ProgramData
+VSCODE_ESM_ENTRYPOINT=vs/workbench/api/node/extensionHostProcess
+USERDOMAIN=KILLER
+CURSOR_LAYOUT=unifiedAgent
+PROCESSOR_REVISION=a502
+NO_COLOR=1
+PROCESSOR_LEVEL=6
+NUMBER_OF_PROCESSORS=8
+TMPDIR=C:\Users\kevin\AppData\Local\Temp
+CURSOR_EXTENSION_HOST_ROLE=agent-exec
+EFC_26276_2283032206=1
+ProgramFiles(x86)=C:\Program Files (x86)
+AGENT_TRANSCRIPTS=C:\Users\kevin\.cursor\projects\c-Users-kevin-OneDrive-Escritorio-Amerilist-website-repository-puppies\agent-transcripts
+VSCODE_NLS_CONFIG={"userLocale":"en-us","osLocale":"es-cr","resolvedLanguage":"en","defaultMessagesFile":"C:\\Users\\kevin\\AppData\\Local\\Programs\\cursor\\resources\\app\\out\\nls.messages.json","locale":"en-us","availableLanguages":{}}
+FPS_BROWSER_USER_PROFILE_STRING=Default
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+TMP=C:\Users\kevin\AppData\Local\Temp
+EFC_26276_2775293581=1
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_16280_ALTZKDMHVZZATXYP
+PLINK_PROTOCOL=ssh
+CURSOR_CONVERSATION_ID=0dee443e-cea5-4116-b391-301192402367
+ProgramFiles=C:\Program Files (x86)
+ChocolateyInstall=C:\ProgramData\chocolatey
+VSCODE_CODE_CACHE_PATH=C:\Users\kevin\AppData\Roaming\Cursor\CachedData\ae3a2b7231dd56194447fe4570dfdc61640b1e90
+EFC_26276_3789132940=1
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL
+CURSOR_WORKSPACE_LABEL=puppies
+HOME=C:\Users\kevin
+FORCE_COLOR=0
+SystemRoot=C:\WINDOWS
+CommonProgramW6432=C:\Program Files\Common Files
+PROCESSOR_ARCHITEW6432=AMD64
+LOGONSERVER=\\KILLER
+USERPROFILE=C:\Users\kevin
+ACE_STUDIO_PATH=C:\Program Files\ACE Studio
+EFC_26276_1592913036=1
+PUBLIC=C:\Users\Public
+USERDOMAIN_ROAMINGPROFILE=KILLER
+APPDATA=C:\Users\kevin\AppData\Roaming
+HOMEDRIVE=C:
+EFC_26276_1262719628=1
+VSCODE_PID=16280
+_ZO_DOCTOR=0
+OS=Windows_NT
+PSModulePath=C:\Users\kevin\OneDrive\Documentos\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\PowerShell\Modules\
+EFC_26276_4126798990=1
+VSCODE_CWD=C:\Users\kevin\AppData\Local\Programs\cursor
+USERNAME=kevin
+MIC_LD_LIBRARY_PATH=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+PROCESSOR_ARCHITECTURE=x86
+C_EM64T_REDIST11=C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\
+ComSpec=C:\WINDOWS\system32\cmd.exe
+TEMP=C:\Users\kevin\AppData\Local\Temp
+Path=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\kevin\bin;c:\Users\kevin\AppData\Local\Programs\cursor\resources\app\node_modules\@vscode\ripgrep\bin;C:\Python314\Scripts\;C:\Python314\;c:\Users\kevin\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Users\kevin\AppData\Local\Microsoft\WindowsApps;C:\Users\kevin\AppData\Roaming\npm;C:\Users\kevi;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\GitHub CLI\;c:\Users\kevin\AppData\Local\Programs\cursor\resources\app\codeBin;C:\Users\kevin\AppData\Local\Microsoft\WindowsApps;C:\Users\kevin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kevin\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\kevin\AppData\Local\GitHubDesktop\bin;C:\Users\kevin\AppData\Roaming\npm
+PT8HOME=C:\Program Files\Cisco Packet Tracer 8.2.1
+VSCODE_PROCESS_TITLE=extension-host (agent-exec) puppies [2-14]
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\kevin\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\kevin\AppData\Local\Temp\63684748b9e9079819ad8630'... OK
+Reading from temporary file 'C:\Users\kevin\AppData\Local\Temp\63684748b9e9079819ad8630'... OK
+Deleting temporary file 'C:\Users\kevin\AppData\Local\Temp\63684748b9e9079819ad8630'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\kevin
+UserDataDirectoryPath: C:\Users\kevin\.gcm
+GetCurrentDirectory(): C:\Users\kevin\OneDrive\Escritorio\Amerilist\website repository\puppies
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:65415/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.50.1.windows.1'
+Locating current repository...Git repository at 'C:/Users/kevin/OneDrive/Escritorio/Amerilist/website repository/puppies/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/kevin/.gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/kevin/.gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/kevin/.gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/kevin/.gitconfig	filter.lfs.required=true
+file:C:/Users/kevin/.gitconfig	user.name=esqukev
+file:C:/Users/kevin/.gitconfig	user.email=kbermudeze@ucenfotec.ac.cr
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/amerilistdms/stony-point-doodles.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+file:.git/config	branch.main.vscode-merge-base=origin/main
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\kevin\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\kevin\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
