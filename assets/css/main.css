@@ -1934,6 +1934,9 @@ span.hr-btn.hr-btn--ghost:hover {
 	width: min(var(--max), calc(100% - 2.5rem));
 	margin-inline: auto;
 }
+.hr-family--pack .hr-family__grid + .hr-family__grid {
+	margin-top: 2rem;
+}
 .hr-family--pack .hr-family__card {
 	background: none;
 	box-shadow: none;
