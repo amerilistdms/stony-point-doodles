@@ -539,18 +539,44 @@ span.hr-btn.hr-btn--ghost:hover {
 .hr-nav .sub-menu {
 	display: none;
 	position: absolute;
+	top: calc(100% - 0.15rem);
+	left: 0;
+	z-index: 70;
 	background: #fff;
 	border: 1px solid var(--line);
-	padding: 0.6rem 0;
-	min-width: 200px;
+	border-radius: 10px;
+	padding: 0.4rem 0;
+	min-width: 15.5rem;
 	list-style: none;
 	box-shadow: var(--shadow);
 	text-transform: none;
 	letter-spacing: 0;
 	font-family: var(--font);
 }
+.hr-nav .sub-menu a {
+	display: block;
+	padding: 0.55rem 1rem;
+	font-size: 0.78rem;
+	letter-spacing: 0.04em;
+	text-transform: none;
+	white-space: nowrap;
+}
+.hr-nav .sub-menu a::after { display: none; }
 .hr-nav li { position: relative; }
-.hr-nav li:hover > .sub-menu { display: block; }
+.hr-nav li:hover > .sub-menu,
+.hr-nav li:focus-within > .sub-menu { display: block; }
+.hr-nav .has-sub > a { padding-right: 1.45rem; }
+.hr-nav .has-sub > a::before {
+	content: "";
+	position: absolute;
+	right: 0.4rem;
+	top: 50%;
+	width: 0.32rem;
+	height: 0.32rem;
+	border-right: 1.5px solid currentColor;
+	border-bottom: 1.5px solid currentColor;
+	transform: translateY(-70%) rotate(45deg);
+}
 
 .hr-header__actions { display: flex; align-items: center; gap: 0.85rem; justify-self: end; }
 .hr-header__phone { font-size: 0.82rem; color: var(--ink-soft); }
@@ -1451,6 +1477,7 @@ span.hr-btn.hr-btn--ghost:hover {
 .hr-cta .hr-kicker--on-dark { color: var(--peach); }
 .hr-cta .hr-h2 { max-width: none; color: #fff; margin-inline: auto; }
 .hr-cta .hr-lead { margin-inline: auto; color: rgba(255,255,255,0.88); }
+.hr-cta .hr-script { color: #ffbc7d; margin: 0.35rem 0 0.4rem; font-size: clamp(1.7rem, 3vw, 2.4rem); }
 .hr-cta .hr-actions { justify-content: center; margin-top: 1.5rem; }
 .hr-cta .hr-btn--light {
 	background: var(--coral);
@@ -2252,6 +2279,24 @@ span.hr-btn.hr-btn--ghost:hover {
 	}
 	.hr-nav.is-open .hr-nav__list li:last-child a { border-bottom: 0; }
 	.hr-nav.is-open .hr-nav__list a::after { display: none; }
+	.hr-nav.is-open .has-sub > a::before { display: none; }
+	.hr-nav.is-open .sub-menu {
+		display: block;
+		position: static;
+		min-width: 0;
+		margin: -0.35rem 0 0.35rem;
+		padding: 0 0 0 0.85rem;
+		border: 0;
+		border-radius: 0;
+		background: transparent;
+		box-shadow: none;
+	}
+	.hr-nav.is-open .sub-menu a {
+		padding: 0.7rem 0;
+		font-size: 0.88rem;
+		white-space: normal;
+	}
+	.hr-nav.is-open .has-sub > a { border-bottom: 0; }
 	.hr-menu-btn { display: flex; }
 	.hr-header__phone { display: none; }
 	.hr-mobile-cta { display: flex; }
