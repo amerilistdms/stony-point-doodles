@@ -795,6 +795,7 @@ span.hr-btn.hr-btn--ghost:hover {
 	padding: 4.75rem max(1.25rem, calc((100% - var(--max)) / 2)) 4.25rem;
 	background: var(--hero-wash);
 	color: #fff;
+	text-align: center;
 }
 .is-resource .hr-page-hero {
 	text-align: center;
@@ -818,8 +819,18 @@ span.hr-btn.hr-btn--ghost:hover {
 .hr-page-hero--mint { background: var(--hero-wash); }
 .hr-page-hero .hr-kicker { color: var(--peach); }
 .hr-page-hero .hr-display,
-.hr-page-hero .hr-display--page { color: #fff; max-width: 16ch; }
-.hr-page-hero .hr-lead { color: rgba(255, 255, 255, 0.88); }
+.hr-page-hero .hr-display--page {
+	color: #fff;
+	max-width: 22ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+.hr-page-hero .hr-lead {
+	color: rgba(255, 255, 255, 0.88);
+	max-width: 40rem;
+	margin-left: auto;
+	margin-right: auto;
+}
 .hr-faq + .hr-faq {
 	padding-top: 0;
 }
@@ -1565,10 +1576,16 @@ span.hr-btn.hr-btn--ghost:hover {
 	margin: 0 auto;
 	padding: 4.5rem 0 5rem;
 }
+.hr-moments + .hr-moments {
+	padding-top: 1.25rem;
+}
 .hr-alumni-gallery__grid:empty { display: none; }
 .hr-moments .hr-section-head {
 	margin-bottom: 2.25rem;
 	max-width: 46rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 .hr-moments .hr-h2 {
 	max-width: none;
