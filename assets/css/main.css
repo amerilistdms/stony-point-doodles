@@ -174,6 +174,13 @@ span.hr-btn.hr-btn--ghost:hover {
 .hr-section-head .hr-lead { margin-bottom: 0; }
 
 .hr-prose p { margin: 0 0 1rem; color: var(--ink-soft); }
+.hr-prose ul,
+.hr-prose ol {
+	margin: 0 0 1rem;
+	padding-left: 1.25rem;
+	color: var(--ink-soft);
+}
+.hr-prose li { margin: 0 0 0.45rem; line-height: 1.65; }
 .hr-prose a:not(.hr-btn) {
 	color: var(--rose);
 	text-decoration: underline;
