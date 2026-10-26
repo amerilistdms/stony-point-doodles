@@ -19,6 +19,7 @@
       try {
         if (sessionStorage.getItem("spd-guardian") === "1") {
           document.documentElement.classList.add("is-unlocked");
+          document.documentElement.style.overflow = "";
         }
       } catch (err) {}
     })();
@@ -180,6 +181,8 @@
 
       const unlock = function () {
         document.documentElement.classList.add("is-unlocked");
+        document.documentElement.style.overflow = "";
+        document.body.style.overflow = "";
         try { sessionStorage.setItem(KEY, "1"); } catch (err) {}
       };
 

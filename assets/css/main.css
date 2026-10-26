@@ -2829,17 +2829,22 @@ span.hr-btn.hr-btn--ghost:hover {
 /* Private guardian leave-behind */
 .hr-gate {
 	display: none;
-	min-height: 100vh;
+	position: fixed;
+	inset: 0;
+	z-index: 80;
 	place-items: center;
 	padding: 2rem 1.25rem;
+	overflow: auto;
 	background: var(--hero-wash);
 	text-align: center;
 }
-html:not(.is-unlocked) {
-	overflow: hidden;
-}
 html:not(.is-unlocked) .hr-gate { display: grid; }
 html:not(.is-unlocked) .hr-private { display: none; }
+html.is-unlocked,
+html.is-unlocked body {
+	overflow: auto;
+	height: auto;
+}
 .hr-gate__card {
 	width: min(26rem, 100%);
 	background: #fff;
