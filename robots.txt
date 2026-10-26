@@ -1,10 +1,16 @@
 User-agent: *
 Allow: /
+Disallow: /guardian-home
+Disallow: /guardian-home.html
 
 User-agent: SkypeUriPreview
 Allow: /
+Disallow: /guardian-home
+Disallow: /guardian-home.html
 
 User-agent: bingbot
 Allow: /
+Disallow: /guardian-home
+Disallow: /guardian-home.html
 
 Sitemap: https://www.stonypointdoodles.com/sitemap.xml
